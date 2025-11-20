@@ -4,7 +4,7 @@ import io
 import os
 
 # --- ページ設定 ---
-st.set_page_config(page_title="512KB以下画像圧縮ツール", layout="centered", page_icon="🎨")
+st.set_page_config(page_title="Discrod Stamp Convert", layout="centered", page_icon="🎨")
 
 # --- カスタムCSS (ダークテーマ & 高品質デザイン) ---
 st.markdown("""
@@ -90,7 +90,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # タイトル表示
-st.title("512KB以下画像圧縮ツール")
+st.title("Discrod Stamp Convert")
 st.caption("対応ファイル　PNG,APNG,JPEG,GIF")
 
 st.markdown("""
@@ -277,4 +277,5 @@ if file is not None:
                 file_name=f"optimized_image.{ext}",
                 mime=mime_type,
                 use_container_width=True
+
             )
